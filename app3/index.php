@@ -2,11 +2,11 @@
 function stringParaBinario($string) {
   $binario = '';
   foreach(str_split($string) as $char) {
-    $binario .=str_pad(decbin(ord($char)), 8, '0', STR_PAD_LEFT) . ' ';
+    $binario .= str_pad(decbin(ord($char)), 8, '0', STR_PAD_LEFT) . ' ';
   }
   return $binario;
 }
-$farse= "André Vasconcelos de Sá";
+$frase= "André Vasconcelos de Sá";
 $fraseBinario = stringParaBinario($frase);
 
 echo "Frase original: " . $frase . "<br>";
